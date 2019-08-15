@@ -61,3 +61,19 @@
 5. Natural key: has mapping to anything in the real world; social security number
 6. Foreign key: links multiple tables together; stores primary key of another table
 7. Composite key: two or more columns need to match to identify a unique row
+
+# Structured query language (SQL)
+1. Language used to interact with relational database management system RDBMS
+2. Not all RDBMS follow the SQL standard
+3. Concepts are the same but implementation varies
+4. Hybrid language
+   1. 4 languages in 1
+   2. Data query language (DQL)
+      1. Retrieve information
+   3. Data definition language (DDL)
+      1. Define schemas
+   4. Data control language (DCL)
+      1. Controls access
+      2. User & permissions management
+   5. Data manipulation language (DML)
+      1. Insert, update, delete data
