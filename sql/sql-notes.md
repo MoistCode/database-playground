@@ -98,4 +98,16 @@ CREATE TABLE student (
 DESCRIBE student;
 
 DROP TABLE student;
+
+ALTER TABLE student ADD gpa DECIMAL;
+
+ALTER TABLE student DROP COLUMN gpa;
+
+INSERT INTO student VALUES(
+  1,
+  "Jack",
+  "Biology",
+);
+
+INSERT INTO student(student_id, name) VALUES(2, "Kate");
 ```
