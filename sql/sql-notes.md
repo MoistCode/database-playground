@@ -43,4 +43,7 @@
    5. Flexible tables
    6. Non-relational database management systems (NRDBMS)
       1. MongoDB, dynamoDB, apache cassandra, firebase, etc.
+   7. Implementation specific
+      1. Any non-relational database falls under this category
+      2. Not NRDBMS implement their own language for performing CRUD and admin ops
    
