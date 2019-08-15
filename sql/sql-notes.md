@@ -179,5 +179,13 @@ ORDER BY name, student_id DESC;
 
 SELECT * 
 FROM student
+ORDER BY student_id DESC
 LIMIT 2;
-```
+
+SELECT *
+FROM student
+WHERE student_id <= 3 AND name <> 'Jack';
+
+SELECT *
+FROM student
+WHERE major IN ('Biology', 'Chemistry') AND student_id > 2;
