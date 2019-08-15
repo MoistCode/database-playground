@@ -189,3 +189,38 @@ WHERE student_id <= 3 AND name <> 'Jack';
 SELECT *
 FROM student
 WHERE major IN ('Biology', 'Chemistry') AND student_id > 2;
+```
+
+```sql
+CREATE TABLE branch(
+  branch_id INT PRIMARY KEY,
+  branch_name VARCHAR(40),
+  mgr_id INT,
+  mgr_start_date DATE,
+  FOREIGN KEY(mgr_id) 
+  REFERENCES employee(emp_id) 
+  ON DELETE SET NULL;
+)
+
+ALTER TABLE employee
+ADD FOREIGN KEY(branch_id)
+REFERENCES branch(branch_id)
+ON DELETE SET NULL;
+
+CREATE TABLE works_with(
+  emp_id INT,
+  client_id INT,
+  total_sales INT,
+  PRIMARY KEY(emp_id, client_id)
+  FOREIGN KEY(emp_id) REFERENCES employee(emp_id) ON DELETE CASCADE
+  FOREIGN KEY(client_id) REFERENCES client(client_id) ON DELETE CASCADE
+);
+
+INSERT INTO employee VALUES(100, 'David', 'Wallace', '1967-11-17', 'M', 250000, NULL, NULL);
+
+INSERT INTO branch VALUES(1, 'Corporate', 100, '2006-02-09');
+
+UPDATE employee
+SET branch_id = 1
+WHERE emp_id = 100;
+```
