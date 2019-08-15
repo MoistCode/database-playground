@@ -160,3 +160,24 @@ SET name = "Deleted", major = "Deleted";
 DELETE FROM student
 WHERE student_id = 5 AND name = "Tom";
 ```
+
+```sql
+SELECT *
+FROM student;
+
+SELECT student.name, student.student_id
+FROM student
+ORDER BY name DESC;
+
+SELECT student.name
+FROM student
+ORDER BY student_id ASC;
+
+SELECT *
+FROM student
+ORDER BY name, student_id DESC;
+
+SELECT * 
+FROM student
+LIMIT 2;
+```
