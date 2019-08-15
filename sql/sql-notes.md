@@ -77,3 +77,25 @@
       2. User & permissions management
    5. Data manipulation language (DML)
       1. Insert, update, delete data
+
+# Queries
+1. Set of instructions sent to the RDBMS to indicate what information you want it to retrieve for you
+2. 
+  ```sql
+    SELECT employee.name, employee.age
+    FROM employee
+    WHERE employee.salary > 3000;
+  ```
+
+```sql
+CREATE TABLE student (
+  student_id INT PRIMARY KEY,
+  name VARCHAR(20),
+  major VARCHAR(20)
+  -- PRIMARY KEY(student_id) 
+);
+
+DESCRIBE student;
+
+DROP TABLE student;
+```
