@@ -50,3 +50,14 @@
 # Database queries
 1. Request made for specific information
 2. Complex structure requires complex queries
+
+# Tables and keys
+1. Row: collection of informaton for a single entity
+2. Column: collection of information type
+3. Primary key: uniquely identify a row
+   1. Identification number
+   2. Email
+4. Surrogate key: no mapping to anything to the real world
+5. Natural key: has mapping to anything in the real world; social security number
+6. Foreign key: links multiple tables together; stores primary key of another table
+7. Composite key: two or more columns need to match to identify a unique row
