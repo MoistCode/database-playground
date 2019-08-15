@@ -111,3 +111,52 @@ INSERT INTO student VALUES(
 
 INSERT INTO student(student_id, name) VALUES(2, "Kate");
 ```
+
+```sql
+CREATE TABLE student (
+  student_id INT UNIQUE NOT NULL,
+  name VARCHAR(20) NOT NULL,
+  major VARCHAR(20) UNIQUE,
+  PRIMARY KEY (student_id)
+);
+```
+
+```sql
+CREATE TABLE student (
+  student_id INT UNIQUE NOT NULL,
+  name VARCHAR(20) NOT NULL,
+  major VARCHAR(20) DEFAULT "Undecided",
+  PRIMARY KEY(student_id)
+);
+```
+
+```sql
+CREATE TABLE student(
+  student_id INT AUTO_INCREMENT,
+  name VARCHAR(20) NOT NULL,
+  major VARCHAR(20),
+  PRIMARY KEY(student_id)
+);
+```
+
+```sql
+SELECT * FROM student;
+
+UPDATE student
+SET major = "Bio"
+WHERE major = "Biology";
+
+UPDATE student
+SET major = "Biochemistry"
+WHERE major = "Bio" OR major = "Chemistry";
+
+UPDATE student
+SET name = "Cowman", major = "Undecided"
+WHERE student_id = 1;
+
+UPDATE student
+SET name = "Deleted", major = "Deleted";
+
+DELETE FROM student
+WHERE student_id = 5 AND name = "Tom";
+```
