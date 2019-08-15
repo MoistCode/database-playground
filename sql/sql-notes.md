@@ -47,3 +47,6 @@
       1. Any non-relational database falls under this category
       2. Not NRDBMS implement their own language for performing CRUD and admin ops
    
+# Database queries
+1. Request made for specific information
+2. Complex structure requires complex queries
