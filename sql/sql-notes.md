@@ -244,5 +244,7 @@ WHERE sex = 'M';
 SELECT SUM(salary)
 FROM employee;
 
-
+SELECT COUNT(sex), sex
+FROM employee
+GROUP BY sex;
 ```
