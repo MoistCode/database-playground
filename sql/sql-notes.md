@@ -226,4 +226,10 @@ WHERE emp_id = 100;
 
 SELECT first_name AS forename, last_name AS surname
 FROM employee;
+
+SELECT DISTINCT sex
+FROM employee;
+
+SELECT DISTINCT branch_id
+FROM employee;
 ```
