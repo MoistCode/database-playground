@@ -274,9 +274,20 @@ FROM employee;
 SELECT branch_name
 FROM branch;
 
-SELECT first_name
+-- Same number of columns
+-- Similar data types
+SELECT first_name AS name
 FROM employee
 UNION
-Select branch_name
+SELECT branch_name
 FROM branch;
+UNION
+SELECT client_name
+FROM client;
+
+SELECT client_name
+FROM client
+UNION
+SELECT supplier_name
+FROM branch_supplier;
 ```
