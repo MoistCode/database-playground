@@ -223,4 +223,7 @@ INSERT INTO branch VALUES(1, 'Corporate', 100, '2006-02-09');
 UPDATE employee
 SET branch_id = 1
 WHERE emp_id = 100;
+
+SELECT * 
+FROM employee;
 ```
