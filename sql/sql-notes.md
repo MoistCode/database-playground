@@ -234,5 +234,6 @@ SELECT DISTINCT branch_id
 FROM employee;
 
 SELECT COUNT(emp_id)
-FROM employee;
+FROM employee
+WHERE sex = 'F' AND birth_date > '1970-01-01';
 ```
