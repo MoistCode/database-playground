@@ -306,5 +306,6 @@ SELECT employee.emp_id, employee.first_name, branch.branch_name
 FROM employee
 LEFT JOIN branch -- Gets other employees as well that do not match
 --RIGHT JOIN branch Gets other branches as well that do not match
+-- FULL OUTER JOIN left join and right join combined GRAB THEM ALL
 ON employee.emp_id = branch.mgr_id;
 ```
