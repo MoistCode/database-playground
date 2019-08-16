@@ -224,6 +224,6 @@ UPDATE employee
 SET branch_id = 1
 WHERE emp_id = 100;
 
-SELECT first_name, last_name
+SELECT first_name AS forename, last_name AS surname
 FROM employee;
 ```
