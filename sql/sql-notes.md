@@ -288,6 +288,23 @@ FROM client;
 SELECT client_name, client.branch_id
 FROM client
 UNION
-SELECT supplier_name, branch_suppler.branch_id
+SELECT supplier_name, branch_suppler.branch_id 
 FROM branch_supplier;
+
+SELECT salary
+FROM employee
+UNION
+SELECT total_sales
+FROM works_with;
+
+SELECT employee.emp_id, employee.first_name, branch.branch_name
+FROM employee
+JOIN branch -- aka inner join
+ON employee.emp_id = branch.m/gr_id;
+
+SELECT employee.emp_id, employee.first_name, branch.branch_name
+FROM employee
+LEFT JOIN branch -- Gets other employees as well that do not match
+--RIGHT JOIN branch Gets other branches as well that do not match
+ON employee.emp_id = branch.mgr_id;
 ```
