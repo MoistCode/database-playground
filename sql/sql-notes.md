@@ -236,4 +236,7 @@ FROM employee;
 SELECT COUNT(emp_id)
 FROM employee
 WHERE sex = 'F' AND birth_date > '1970-01-01';
+
+SELECT AVG(salary)
+FROM employee;
 ```
