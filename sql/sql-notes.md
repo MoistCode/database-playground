@@ -267,4 +267,16 @@ WHERE birth_data LIKE '____-10%';
 SELECT *
 FROM client
 WHERE client_name LIKE '%school%';
+
+SELECT first_name
+FROM employee;
+
+SELECT branch_name
+FROM branch;
+
+SELECT first_name
+FROM employee
+UNION
+Select branch_name
+FROM branch;
 ```
