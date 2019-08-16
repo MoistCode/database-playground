@@ -308,4 +308,16 @@ LEFT JOIN branch -- Gets other employees as well that do not match
 --RIGHT JOIN branch Gets other branches as well that do not match
 -- FULL OUTER JOIN left join and right join combined GRAB THEM ALL
 ON employee.emp_id = branch.mgr_id;
+
+SELECT works_with.emp_id
+FROM works_with
+WHERE works_with.total_sales > 30000;
+
+SELECT employee.first_name, employee.last_name
+FROM employee
+WHERE employee.emp_id IN (
+  SELECT works_with.emp_id
+  FROM works_with
+  WHERE works_with.total_sales > 30000;
+)
 ```
