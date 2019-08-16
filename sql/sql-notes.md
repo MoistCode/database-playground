@@ -320,4 +320,12 @@ WHERE employee.emp_id IN (
   FROM works_with
   WHERE works_with.total_sales > 30000;
 );
+
+SELECT client.client_name
+FROM client
+WHERE client.client_id IN (
+  SELECT branch.client_id
+  FROM branch
+  WHERE branch.mgr_id = 102;
+);
 ```
