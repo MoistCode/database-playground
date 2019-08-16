@@ -247,4 +247,8 @@ FROM employee;
 SELECT COUNT(sex), sex
 FROM employee
 GROUP BY sex;
+
+SELECT SUM(total_sales), total_sales
+FROM works_with
+GROUP BY emp_id;
 ```
