@@ -241,5 +241,8 @@ SELECT AVG(salary)
 FROM employee
 WHERE sex = 'M';
 
+SELECT SUM(salary)
+FROM employee;
+
 
 ```
