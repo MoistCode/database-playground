@@ -226,5 +226,5 @@ WHERE emp_id = 100;
 
 SELECT * 
 FROM employee
-ORDER BY salary DESC;
+ORDER BY sex, first_name, last_name;
 ```
