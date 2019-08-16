@@ -251,4 +251,10 @@ GROUP BY sex;
 SELECT SUM(total_sales), total_sales
 FROM works_with
 GROUP BY emp_id;
+
+SELECT * 
+FROM client
+WHERE client_name LIKE '%LLC';
+
+
 ```
