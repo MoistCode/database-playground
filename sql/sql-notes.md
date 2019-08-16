@@ -253,7 +253,7 @@ FROM works_with
 GROUP BY emp_id;
 
 SELECT * 
-FROM client
+FROM clientclient_name
 WHERE client_name LIKE '%LLC';
 
 SELECT *
@@ -262,5 +262,9 @@ WHERE supplier_name LIKE '% Label%';
 
 SELECT *
 FROM employee
-WHERE birth_data LIKE '%-10';
+WHERE birth_data LIKE '____-10%';
+
+SELECT *
+FROM client
+WHERE client_name LIKE '%school%';
 ```
