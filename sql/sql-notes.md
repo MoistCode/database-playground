@@ -225,5 +225,6 @@ SET branch_id = 1
 WHERE emp_id = 100;
 
 SELECT * 
-FROM employee;
+FROM employee
+ORDER BY salary DESC;
 ```
