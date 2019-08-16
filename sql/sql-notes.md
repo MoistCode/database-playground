@@ -232,4 +232,7 @@ FROM employee;
 
 SELECT DISTINCT branch_id
 FROM employee;
+
+SELECT COUNT(emp_id)
+FROM employee;
 ```
