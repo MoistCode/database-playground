@@ -285,9 +285,9 @@ UNION
 SELECT client_name
 FROM client;
 
-SELECT client_name
+SELECT client_name, client.branch_id
 FROM client
 UNION
-SELECT supplier_name
+SELECT supplier_name, branch_suppler.branch_id
 FROM branch_supplier;
 ```
