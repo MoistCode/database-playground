@@ -224,7 +224,6 @@ UPDATE employee
 SET branch_id = 1
 WHERE emp_id = 100;
 
-SELECT * 
-FROM employee
-LIMIT 5;
+SELECT first_name, last_name
+FROM employee;
 ```
