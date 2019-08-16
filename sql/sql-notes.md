@@ -323,8 +323,8 @@ WHERE employee.emp_id IN (
 
 SELECT client.client_name
 FROM client
-WHERE client.client_id IN (
-  SELECT branch.client_id
+WHERE client.branch_id = (
+  SELECT branch.branch_id
   FROM branch
   WHERE branch.mgr_id = 102;
 );
