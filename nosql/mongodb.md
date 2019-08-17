@@ -16,7 +16,7 @@
    2. ```
         db.users.insertOne({
           name: "Amy",
-          age: "23",
+          age: 23,
           status: "A",
           groups: ["editor", "manager"]
         });
