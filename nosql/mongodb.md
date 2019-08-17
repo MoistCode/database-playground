@@ -23,3 +23,4 @@
    ```
 9. `db.users.find()`
 10. `db.users.find({name: "amy"})`
+11. SeveralNines cluster controll for mongodb

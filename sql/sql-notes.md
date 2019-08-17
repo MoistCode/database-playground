@@ -329,4 +329,8 @@ WHERE client.branch_id = (
   WHERE branch.mgr_id = 102
   LIMIT 1;
 );
+
+-- on delete set null
+-- on delete cascade
+
 ```
