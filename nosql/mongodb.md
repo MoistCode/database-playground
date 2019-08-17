@@ -11,3 +11,5 @@
    6. BSON; binary JSON
 5. `mongod` is server
 6. `mongo` is how we talk to db
+7. If you try to work with something that doesn't exist, it will just create it
+   1. `use subscribe` will create db subscribe
