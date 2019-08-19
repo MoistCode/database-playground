@@ -332,5 +332,6 @@ WHERE client.branch_id = (
 
 -- on delete set null
 -- on delete cascade
-
+DELETE FROM employee
+WHERE emp_id = 102;
 ```
